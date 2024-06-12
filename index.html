@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Project</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+    <section class="bx_opns_sec">
+        <div class="bx_opns_ottr">
+            <div class="bx_opns_grp">
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+                <div class="bx_opns_prt">
+                    <span>Hi</span>
+                </div>
+            </div>
+            <div class="bx_opns_btn">
+                <button class="ld_btn" onclick="lddOtrMore()">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        var currentIndex = 4;  // Start with the first 4 items displayed
+
+        function setUp() {
+            var bxPrt = document.querySelectorAll(".bx_opns_prt");
+            var bxPrtAry = Array.from(bxPrt);
+            for (var a = 0; a < bxPrtAry.length; a++) {
+                if (a > 3) {
+                    bxPrtAry[a].style.display = "none";
+                }
+            }
+            evClick(bxPrtAry);
+        }
+
+        function lddOtrMore() {
+            var bxPrt = document.querySelectorAll(".bx_opns_prt");
+            var bxPrtAry = Array.from(bxPrt);
+            lddMore(bxPrtAry);
+        };
+
+
+        function lddMore(bxPrtAry) {
+            lddInrMore(bxPrtAry);
+        }
+
+        function lddInrMore(bxPrtAry) {
+            var limit = currentIndex + 4;  // Reveal next 4 items
+            for (var a = currentIndex; a < limit && a < bxPrtAry.length; a++) {
+                bxPrtAry[a].style.display = "flex";
+            }
+            currentIndex += 4;
+        }
+
+        setUp();
+    </script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>

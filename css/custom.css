@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+/* ayon paul start / 31.05.2024 */
+
+.bx_opns_sec {
+    padding: 7rem 0;
+}
+
+.bx_opns_grp {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.bx_opns_prt {
+    width: 23.5%;
+    border: 1.5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bx_opns_prt span {
+    color: red;
+    font-size: 2.6rem;
+    padding: 10px;
+}
+
+.ld_btn {
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid red;
+    background: red;
+    transition: all 0.3s;
+}
+
+.ld_btn:hover {
+    color: red;
+    background: transparent;
+}
+
+.bx_opns_btn {
+    margin-top: 20px;
+    text-align: center;
+}
